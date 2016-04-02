@@ -5,7 +5,7 @@
     id              = "com.laroche.app.camara"
     version         = "1.1.0">
 <name>CAMARA CANVAS</name>
-<description>Aplicación para el laboratorio LA R0CHE-POSAY</description>
+<description>Aplicación</description>
 
 
 <feature name="http://api.phonegap.com/1.0/network"/>
