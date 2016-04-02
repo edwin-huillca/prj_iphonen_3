@@ -1,28 +1,36 @@
-<?xml version='1.0' encoding='utf-8'?>
-<widget id="com.example.custom-camera" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>CustomCamera</name>
-    <description>
-        Hello World sample application that responds to the deviceready event.
-    </description>
-    <author email="support@phonegap.com" href="http://phonegap.com">
-        PhoneGap Team
-    </author>
-    <feature name="http://api.phonegap.com/1.0/device" />
-    <preference name="permissions" value="none" />
-    <preference name="orientation" value="default" />
-    <preference name="target-device" value="universal" />
-    <preference name="fullscreen" value="true" />
-    <preference name="webviewbounce" value="true" />
-    <preference name="prerendered-icon" value="true" />
-    <preference name="stay-in-webview" value="false" />
-    <preference name="ios-statusbarstyle" value="black-opaque" />
-    <preference name="detect-data-types" value="true" />
-    <preference name="exit-on-suspend" value="false" />
-    <preference name="show-splash-screen-spinner" value="true" />
-    <preference name="auto-hide-splash-screen" value="true" />
-    <preference name="disable-cursor" value="false" />
-    <preference name="android-minSdkVersion" value="7" />
-    <preference name="android-installLocation" value="auto" />
-	
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns       = "http://www.w3.org/ns/widgets"
+    xmlns:gap       = "http://phonegap.com/ns/1.0"
+    xmlns:android   = "http://schemas.android.com/apk/res/android"
+    id              = "com.laroche.app.camara"
+    version         = "1.1.0">
+<name>SKIN CHECKER DIARY</name>
+<description>Aplicación para el laboratorio LA R0CHE-POSAY</description>
+
+<!--
+<icon src="images/ic_launcher96x96.png" />
+<icon src="images/ic_launcher48x48.png"   gap:platform="android"    gap:qualifier="ldpi" />
+<icon src="images/ic_launcher48x48.png"   gap:platform="android"    gap:qualifier="mdpi" />
+<icon src="images/ic_launcher72x72.png"   gap:platform="android"    gap:qualifier="hdpi" />
+<icon src="images/ic_launcher96x96.png"  gap:platform="android"    gap:qualifier="xhdpi" />
+-->
+
+<feature name="http://api.phonegap.com/1.0/network"/>
+<feature name="http://api.phonegap.com/1.0/device"/>
+<feature name="http://api.phonegap.com/1.0/file" />
+<feature name="http://api.phonegap.com/1.0/camera" />
+
+<preference name="orientation" value="portrait" />
+
+<plugin name="com.phonegap.plugin.statusbar" source="pgb" spec="1.1.0" />
+<plugin name="cordova-plugin-whitelist" spec="1.2.1" />
+<plugin name="org.apache.cordova.core.camera" source="pgb" spec="0.3.6" />
+<plugin name="org.apache.cordova.device" source="pgb" spec="0.3.0" />
+<plugin name="org.apache.cordova.dialogs" source="pgb" spec="0.3.0" />
+<plugin name="org.apache.cordova.vibration" source="pgb" spec="0.3.13" />
+
 <gap:plugin name="com.keith.cordova.plugin.canvascamera" />
+
+<access origin="*" subdomains="false"  />
+
 </widget>
