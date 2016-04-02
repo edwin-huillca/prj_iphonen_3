@@ -4,16 +4,9 @@
     xmlns:android   = "http://schemas.android.com/apk/res/android"
     id              = "com.laroche.app.camara"
     version         = "1.1.0">
-<name>SKIN CHECKER DIARY</name>
+<name>CAMARA CANVAS</name>
 <description>Aplicación para el laboratorio LA R0CHE-POSAY</description>
 
-<!--
-<icon src="images/ic_launcher96x96.png" />
-<icon src="images/ic_launcher48x48.png"   gap:platform="android"    gap:qualifier="ldpi" />
-<icon src="images/ic_launcher48x48.png"   gap:platform="android"    gap:qualifier="mdpi" />
-<icon src="images/ic_launcher72x72.png"   gap:platform="android"    gap:qualifier="hdpi" />
-<icon src="images/ic_launcher96x96.png"  gap:platform="android"    gap:qualifier="xhdpi" />
--->
 
 <feature name="http://api.phonegap.com/1.0/network"/>
 <feature name="http://api.phonegap.com/1.0/device"/>
@@ -28,7 +21,6 @@
 <plugin name="org.apache.cordova.device" source="pgb" spec="0.3.0" />
 <plugin name="org.apache.cordova.dialogs" source="pgb" spec="0.3.0" />
 <plugin name="org.apache.cordova.vibration" source="pgb" spec="0.3.13" />
-
 <gap:plugin name="com.keith.cordova.plugin.canvascamera" />
 
 <access origin="*" subdomains="false"  />
