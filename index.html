@@ -21,7 +21,6 @@
     <head>
         <meta charset="utf-8" />
         <meta name="format-detection" content="telephone=no" />
-        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
         <title>Hello World</title>
@@ -34,13 +33,15 @@
                 <p class="event received">Device is Ready</p>
             </div>
             <button id="openCustomCameraBtn">Open Custom Camera</button>
-            <script src="js/customcamera.js"></script>
+            <img id="photoImg" style="position: fixed; top: 0; width: 50%; left: 25%;" />
+            <script src="js/custom_camera.js"></script>
             <script>
-            document.getElementById("openCustomCameraBtn").addEventListener("click", function() {
-                customCamera.getPicture("latest_scan.jpg", function(imagePath) {
-                    alert("File path: " + imagePath);
-                }, function(error) {
-                    alert(error);
+            document.getElementById("openCustomCameraBtn").addEventListener("click", function(){
+                CustomCamera.getPicture(function(imagePath){
+                    document.getElementById("photoImg").setAttribute("src", imagePath);
+                    console.log(imagePath);
+                }, function(){
+                    alert("Photo cancelled");
                 });
             }, false);
             </script>
