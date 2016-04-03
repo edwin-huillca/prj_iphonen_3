@@ -75,8 +75,9 @@ var app = {
       navigator.camera.getPicture( function( fotoURI ) {
 
         if (fotoURI !="") {
-            alert("image en memoria.");
-            $("#img_src").attr("src", fotoURI);
+            alert("image en memoria2.");
+  
+            document.getElementById("img_src").src = fotoURI;
         };
       },
       function(message) {
