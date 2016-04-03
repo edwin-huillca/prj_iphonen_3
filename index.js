@@ -38,6 +38,7 @@ navigator.camera =  (function() {
 
       var dataURL = canvas.toDataURL("image/jpeg");
       onSuccess(dataURL.replace('data:image/jpeg;base64,', ''));
+      alert("ejecuto custom");
     };
     document.body.appendChild(img);
   }
@@ -74,8 +75,8 @@ var app = {
       navigator.camera.getPicture( function( fotoURI ) {
 
         if (fotoURI !="") {
-           alert("image en memoria.");
-            
+            alert("image en memoria.");
+            $("#img_src").attr("src", fotoURI);
         };
       },
       function(message) {
@@ -88,3 +89,6 @@ var app = {
      
     }
 };
+
+
+app.initialize();
