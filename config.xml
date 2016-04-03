@@ -15,13 +15,15 @@
 
 <preference name="orientation" value="portrait" />
 
-<plugin name="com.phonegap.plugin.statusbar" source="pgb" spec="1.1.0" />
-<plugin name="cordova-plugin-whitelist" spec="1.2.1" />
-<plugin name="org.apache.cordova.core.camera" source="pgb" spec="0.3.6" />
-<plugin name="org.apache.cordova.device" source="pgb" spec="0.3.0" />
-<plugin name="org.apache.cordova.dialogs" source="pgb" spec="0.3.0" />
-<plugin name="org.apache.cordova.vibration" source="pgb" spec="0.3.13" />
+<gap:plugin name="org.apache.cordova.device" />
+<gap:plugin name="org.apache.cordova.core.camera" />
+<gap:plugin name="com.phonegap.plugin.statusbar" />
 
+<gap:plugin name="org.apache.cordova.dialogs" />
+<gap:plugin name="org.apache.cordova.vibration" />
+
+<gap:plugin name="cordova-plugin-whitelist" source="npm" />
+<gap:plugin name="cordova-plugin-camera-with-exif" source="npm"/>
 
 <access origin="*" subdomains="false"  />
 
