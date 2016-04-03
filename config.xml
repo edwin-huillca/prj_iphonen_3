@@ -16,7 +16,7 @@
 <preference name="orientation" value="portrait" />
 
 <gap:plugin name="org.apache.cordova.device" />
-
+<gap:plugin name="org.apache.cordova.core.camera" />
 <gap:plugin name="com.phonegap.plugin.statusbar" />
 
 <gap:plugin name="org.apache.cordova.dialogs" />
@@ -26,8 +26,7 @@
 <!--
 <gap:plugin name="cordova-plugin-camera-with-exif" source="npm"/>
 -->
-
-<plugin name="com.keith.cordova.plugin.canvascamera" spec="1.0.1" source="pgb" />
+<gap:plugin name="com.keith.cordova.plugin.canvascamera" />
 
 <access origin="*" subdomains="false"  />
 
