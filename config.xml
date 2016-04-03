@@ -4,7 +4,7 @@
     xmlns:android   = "http://schemas.android.com/apk/res/android"
     id              = "com.laroche.app.camara"
     version         = "1.1.0">
-<name>CAMARA CANVAS</name>
+<name>CAMARA</name>
 <description>Aplicación</description>
 
 
@@ -21,7 +21,7 @@
 <plugin name="org.apache.cordova.device" source="pgb" spec="0.3.0" />
 <plugin name="org.apache.cordova.dialogs" source="pgb" spec="0.3.0" />
 <plugin name="org.apache.cordova.vibration" source="pgb" spec="0.3.13" />
-<gap:plugin name="com.keith.cordova.plugin.canvascamera" />
+
 
 <access origin="*" subdomains="false"  />
 
