@@ -25,9 +25,9 @@
 <gap:plugin name="cordova-plugin-whitelist" source="npm" />
 <!--
 <gap:plugin name="cordova-plugin-camera-with-exif" source="npm"/>
--->
-<gap:plugin name="com.keith.cordova.plugin.canvascamera" />
 
+<gap:plugin name="com.keith.cordova.plugin.canvascamera" />
+-->
 <access origin="*" subdomains="false"  />
 
 </widget>
