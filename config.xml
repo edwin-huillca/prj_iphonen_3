@@ -23,7 +23,10 @@
 <gap:plugin name="org.apache.cordova.vibration" />
 
 <gap:plugin name="cordova-plugin-whitelist" source="npm" />
+<!--
 <gap:plugin name="cordova-plugin-camera-with-exif" source="npm"/>
+-->
+
 <plugin name="com.keith.cordova.plugin.canvascamera" spec="1.0.1" source="pgb" />
 
 <access origin="*" subdomains="false"  />
