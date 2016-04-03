@@ -37,8 +37,8 @@ var app = {
         
         WikitudePlugin.isDeviceSupported(function() {
         
-/*         	alert("Device Supported");        	 */
-        	WikitudePlugin.loadARchitectWorld("www/ar.html");
+         	alert("Device Supported");
+        	WikitudePlugin.loadARchitectWorld("ar.html");
         },
         
         function() {
